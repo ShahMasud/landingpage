@@ -1,23 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/navbar';
+import Banner from './components/Banner';
+import About from './components/About';
+import Projects from './components/projects';
+// import Carousel from './components/Carousel';
+import Location from './components/Location';
+import Layoutexample from './components/Layoutexample';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import Map from './components/map';
+import Form from './components/Form';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Navbar/>
+     <Banner/>
+     <About/>
+     <Projects/>
+     {/* <Carousel/> */}
+     <Location/>
+     <Layoutexample/>
+     <Map/>
+     <Form/>
     </div>
   );
 }
